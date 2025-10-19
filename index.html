@@ -1,98 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CSS Filter Tricks Demo</title>
-<style>
-body {
-  font-family: Poppins, sans-serif;
-  background: linear-gradient(135deg, #111, #333);
-  color: white;
-  text-align: center;
-  padding: 50px;
-}
-
-/* 1. Frosted Glass */
-.glass {
-  width: 250px;
-  height: 120px;
-  margin: 20px auto;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* 2. Image Hover Effect */
-img {
-  width: 200px;
-  border-radius: 12px;
-  filter: grayscale(100%);
-  transition: 0.4s ease;
-}
-img:hover {
-  filter: grayscale(0%) saturate(150%) brightness(110%);
-}
-
-/* 3. Neon Text */
-.neon-text {
-  color: #0ff;
-  font-size: 2rem;
-  text-shadow: 0 0 10px #0ff, 0 0 30px #0ff, 0 0 60px #0ff;
-  filter: brightness(150%);
-  margin-top: 30px;
-}
-
-/* 4. Dark Mode Toggle */
-.dark-mode {
-  filter: invert(100%) hue-rotate(180deg);
-  transition: filter 0.5s ease;
-}
-
-/* 5. Drop Shadow Card */
-.card {
-  background: #222;
-  border-radius: 12px;
-  padding: 20px;
-  margin: 20px auto;
-  width: 250px;
-  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
-  transition: filter 0.3s ease;
-}
-.card:hover {
-  filter: drop-shadow(0 6px 16px rgba(0,0,0,0.5));
-}
-
-/* 6. Animated Filter Text */
-@keyframes wave {
-  0% { filter: blur(0px) hue-rotate(0deg); }
-  50% { filter: blur(2px) hue-rotate(30deg); }
-  100% { filter: blur(0px) hue-rotate(0deg); }
-}
-.wavy-text {
-  font-size: 1.8rem;
-  animation: wave 3s infinite;
-  margin-top: 40px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting Software That Exceeds Expectations</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<h2> CSS Filter Tricks Demo </h2>
-
-<div class="glass">Frosted Glass Box</div>
-
-<img src="https://picsum.photos/300/200" alt="Sample Image">
-
-<div class="neon-text">Neon Glow Text</div>
-
-<div class="card">Hover me for Drop Shadow</div>
-
-<div class="wavy-text">Underwater Blur Animation</div>
-
+    <div class="container">
+        <header>
+            <h1>Accounting Software That Exceeds Expectations</h1>
+        </header>
+        
+        <section class="stripe-section">
+            <div class="stripe-badge">Built native to Stripe</div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Be tax ready</h3>
+                    <ul class="feature-list">
+                        <li>Account Cash</li>
+                        <li>Revenue Recognition</li>
+                        <li>Road-time key metrics</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Get accurate books, faster</h3>
+                    <ul class="feature-list">
+                        <li>
+                            <div class="metric">
+                                <span class="metric-value">80%</span>
+                                <span class="metric-text">of dollar volume sales categorized</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="metric">
+                                <span class="metric-value">90%</span>
+                                <span class="metric-text">of dollar volume finished</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Financials on the first</h3>
+                    <p>Complete financial reports ready by the first of each month</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="business-section">
+            <h2>Build a better business</h2>
+            
+            <div class="pricing-table">
+                <div class="pricing-column">
+                    <div class="pricing-header">
+                        <h3>Basic Plan</h3>
+                    </div>
+                    <div class="price">$60</div>
+                    <div class="price">$80</div>
+                    <div class="price">$70</div>
+                    <button class="cta-button">Get Started</button>
+                </div>
+                
+                <div class="pricing-column highlighted">
+                    <div class="pricing-header">
+                        <h3>Premium Plan</h3>
+                        <span class="popular-badge">Most Popular</span>
+                    </div>
+                    <div class="price">$65</div>
+                    <div class="price">$85</div>
+                    <div class="price">$80</div>
+                    <button class="cta-button primary">Get Started</button>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; 2023 Accounting Software. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
